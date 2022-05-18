@@ -1,0 +1,5 @@
+type Mutation {
+    updateRoom(room: RoomModel) : Room
+    removeRoom(roomId : Int) : Boolean
+    makeReservation(model : ReservationModel) : Reservation
+}

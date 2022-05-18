@@ -1,0 +1,14 @@
+scalar Date
+
+type Room {
+    id: Int!,
+    name: String!
+    reservations: [Reservation]
+}
+
+type Reservation {
+    id: Int!,
+    startDate: Date,
+    endDate: Date,
+    room: Room!
+}

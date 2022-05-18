@@ -1,0 +1,12 @@
+input RoomModel {
+    id: Int,
+    name: String
+    reservations: [ReservationModel]
+}
+
+input ReservationModel {
+    id: Int,
+    startDate: String!,
+    endDate: String!,
+    roomId: Int
+}

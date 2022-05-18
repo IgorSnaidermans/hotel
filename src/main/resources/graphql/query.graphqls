@@ -1,0 +1,6 @@
+type Query {
+    rooms : [Room]
+    getAvailableRoomsStats(from : String, to : String) : Int
+    schedule(roomId : Int) : [Reservation]
+    checkAvailability(reservationModel : ReservationModel) : Boolean
+}
